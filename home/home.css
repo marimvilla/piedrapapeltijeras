@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+.up{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.up img{
+    position: absolute;
+    width: 400px;
+    display: inline;
+    margin: 0 auto;
+    filter: drop-shadow(0 2px 5px rgba(39, 0, 55, 0.7))
+
+}
+.colum{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.colum > div{
+    width: 50%;
+}
+
+.side-photo{
+    width: 45%;
+    background-image: -webkit-linear-gradient(right, #cb6ce6, transparent 60%), url(/assets/Documento\ A4\ Hoja\ de\ Papel\ Floreada\ Delicado\ Nude.png);
+    height: 100vh;
+    float: left;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+main, footer, body{
+    background: -webkit-linear-gradient(left, #cb6ce6 70%, #ff83a5, #ffc36d) ;
+}
+
+/* .header{
+    background-color: aqua;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+    position: fixed;
+}*/
+
+/*.about, .play{
+	background-color:#fff;
+    width: 40%;
+    height: 60px;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 15px;
+    height: 150px;
+    float: right;
+    font-family: 'Abel', sans-serif;
+    font-size: 20px;
+    opacity: 0.8;
+}*/
+
+/*.about{
+    width: 500px;
+    background: linear-gradient(rgb(172, 118, 208), rgb(176, 176, 176));
+
+
+
+    margin: 80px;
+    margin-bottom: 40px;
+    display: block;
+}*/
+
+.two{
+    align-items: center;
+    width: 500px;
+    height: 425px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    background: -webkit-linear-gradient(left, #ffd65a42 5%, transparent);
+    margin-top: 140px;
+}
+.about, .play p{
+    border-left: #fff;
+    border-style: groove;
+    padding-left: 15px;
+}
+
+h2{
+    margin: 10px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+button {
+    border-radius: 100rem;
+    padding: 1rem;
+    font-family: 'Abel';
+    font-size: 1rem;
+    padding: .5rem 10rem;
+    color: black;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ff83a5, #ffc36d);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 100px 1px #fff inset;
+    margin: auto;
+    display: flex;
+    margin-top: 60px;
+    transition-duration: 0.5s;
+  }
+  
+  button:hover {
+    box-shadow: none;
+    color: white;
+  }
+/*
+button{
+    color: #fff;
+    margin: 60px;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    width: 400px;
+    height: 45px;
+    border: 3px solid #ffc36d;
+    border ;
+    outline: 0;
+    cursor: pointer;
+    background: linear-gradient(to bottom right, #ff83a5, #ffc36d, #ff83a5);
+}*/

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, papel o tijera</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/site.webmanifest">
+<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#603cba">
+<meta name="theme-color" content="#ffffff">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <b>¡Juega ahora!</b>
+    </header>
+    <main>
+<div class="colum">
+    <div class="text">
+        <div class="up">
+            <img src="/assets/White Minimalist Simple Aesthetic Name Twitter Header-2.png" alt="Piedra, papel o tijera">
+        </div>
+        <div class="box">
+    <div class="stoneButton">
+        <button onclick='stones()'id="stone">Piedra</button>
+    </div>
+    <div class="paperButton">
+        <button onclick='papers()' id="paper">Papel</button>
+    </div>
+    <div class="scissorsButton">
+        <button onclick='scissors()' id="scissors">Tijeras</button>
+    </div>
+        <hr>
+    <div class="clearButton">
+        <button onclick='clean()' id="clean">Jugar de nuevo</button>
+    </div>
+        </div>
+        <script>
+            document.getElementById('stone')
+            const stones = function theStone() {
+                let other = Math.round(Math.random() * 2)
+                if (other==0) {
+                    let newp=document.createElement("p");
+                    newp.innerHTML="Tu contrincante sacó piedra, ¡es un empate!";
+                    contain=document.getElementById("newText");
+                        contain.appendChild(newp)
+
+                        document.getElementById("scissors").removeAttribute("onclick");
+                        document.getElementById("paper").removeAttribute("onclick");
+                        document.getElementById("stone").removeAttribute("onclick");
+
+                } else if (other==1) {
+                    let newp=document.createElement("p");
+                    newp.innerHTML="Tu contrincante sacó papel, ¡has perdido!";
+                    contain=document.getElementById("newText");
+                        contain.appendChild(newp)
+                        document.getElementById("scissors").removeAttribute("onclick");
+                        document.getElementById("paper").removeAttribute("onclick");
+                        document.getElementById("stone").removeAttribute("onclick");
+                } else {
+                    let newp=document.createElement("p");
+                    newp.innerHTML="Tu contrincante sacó tijeras, ¡has ganado!";
+                    contain=document.getElementById("newText");
+                        contain.appendChild(newp)
+                        document.getElementById("scissors").removeAttribute("onclick");
+                        document.getElementById("paper").removeAttribute("onclick");
+                        document.getElementById("stone").removeAttribute("onclick");
+                }
+            }
+            document.getElementById('paper')
+            const papers = function thePaper() {
+                let other = Math.round(Math.random() * 2)
+                if (other==0) {
+                    let newp=document.createElement("p");
+                    newp.innerHTML="Tu contrincante sacó piedra, ¡has ganado!";
+                    contain=document.getElementById("newText");
+                        contain.appendChild(newp)
+
+                        document.getElementById("scissors").removeAttribute("onclick");
+                        document.getElementById("paper").removeAttribute("onclick");
+                        document.getElementById("stone").removeAttribute("onclick");
+
+                } else if (other==1) {
+                    let newp=document.createElement("p");
+                    newp.innerHTML="Tu contrincante sacó papel, ¡es un empate!";
+                    contain=document.getElementById("newText");
+                        contain.appendChild(newp)
+
+                        document.getElementById("scissors").removeAttribute("onclick");
+                        document.getElementById("paper").removeAttribute("onclick");
+                        document.getElementById("stone").removeAttribute("onclick");
+
+                } else {
+                    let newp=document.createElement("p");
+                    newp.innerHTML="Tu contrincante sacó tijeras, ¡has perdido!";
+                    contain=document.getElementById("newText");
+                        contain.appendChild(newp)
+
+                        document.getElementById("scissors").removeAttribute("onclick");
+                        document.getElementById("paper").removeAttribute("onclick");
+                        document.getElementById("stone").removeAttribute("onclick");
+
+                }
+            }
+            document.getElementById('scissors')
+            const scissors = function theScissors() {
+                let other = Math.round(Math.random() * 2)
+                if (other==0) {
+                    let newp=document.createElement("p");
+                    newp.innerHTML="Tu contrincante sacó piedra, ¡has perdido!";
+                    contain=document.getElementById("newText");
+                        contain.appendChild(newp)
+                        document.getElementById("scissors").removeAttribute("onclick");
+                        document.getElementById("paper").removeAttribute("onclick");
+                        document.getElementById("stone").removeAttribute("onclick");
+                } else if (other==1) {
+                    let newp=document.createElement("p");
+                    newp.innerHTML="Tu contrincante sacó papel, ¡has ganado!";
+                    contain=document.getElementById("newText");
+                        contain.appendChild(newp)
+
+                        document.getElementById("scissors").removeAttribute("onclick");
+                        document.getElementById("paper").removeAttribute("onclick");
+                        document.getElementById("stone").removeAttribute("onclick");
+                } else {
+                    let newp=document.createElement("p");
+                    newp.innerHTML="Tu contrincante sacó tijeras, ¡es un empate!";
+                    contain=document.getElementById("newText");
+                        contain.appendChild(newp)
+
+                        document.getElementById("scissors").removeAttribute("onclick");
+                        document.getElementById("paper").removeAttribute("onclick");
+                        document.getElementById("stone").removeAttribute("onclick");
+                }
+            }
+        </script>
+        <div class="result">
+            <p id="newText"></p>
+        </div>
+        <script>         
+            const clean = function theClean() {
+                location.reload();
+            }
+        </script>
+    </div>
+    <div class="side-photo">
+        <p></p>
+    </div>
+</div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Encuentra más juegos en ningunlado.com.ve</p>
+        </div>
+    </footer>
+</body>
+</html>

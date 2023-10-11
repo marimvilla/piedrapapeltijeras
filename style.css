@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.colum{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.colum > div{
+    width: 50%;
+}
+
+.side-photo{
+    width: 45%;
+    background-image: -webkit-linear-gradient(left, #cc6ce6, transparent 60%), url(/assets/Documento\ A4\ Hoja\ de\ Papel\ Floreada\ Delicado\ Nude.png);
+    height: 100vh;
+    float: right;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin: auto;
+}
+
+main, footer, body{
+    background: -webkit-linear-gradient(right, #cb6ce6 70%, #ff83a5, #ffc26daa) ;
+}
+
+button{
+	border-radius: 100rem;
+    font-family: 'Abel';
+    font-size: 1.2rem;
+    padding: 1rem 9rem;
+    color: #ff6991;
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #ff83a5, #ffc36d);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #ffffff8f inset;
+    margin: auto;
+    display: flex;
+    margin-top: 15px;
+    transition-duration: 0.5s;
+}
+
+button:hover{
+	box-shadow: none;
+    color: rgb(255, 236, 247);
+}
+
+.box{
+    display: grid;
+	background: #ffffff;
+	border-radius: 15px;
+    height: 400px;
+    margin: auto;
+    width: 500px;
+    align-content: center;
+    opacity: 0.6;
+    margin-top: 7.5rem;
+}
+.box::before{
+    content: "";
+    transform: rotate(10deg);
+    position: absolute;
+	background: #ffffff;
+	border-radius: 15px;
+    height: 400px;
+    width: 500px;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.up{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.up img{
+    position: absolute;
+    width: 400px;
+    display: inline;
+    margin: 0 auto;
+    filter: drop-shadow(0 2px 5px rgba(39, 0, 55, 0.7))
+}
+
+.result{
+    font-family: 'Abel';
+    margin: auto;
+    width: 50%;
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    transition-duration: 1s;
+    color: #ffffff;
+}
+
+.result:hover{
+    color: #000000;
+}
